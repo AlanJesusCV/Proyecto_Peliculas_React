@@ -27,7 +27,7 @@ export const MovieList = ({ listState, setListState }) => {
                     return (
                         <article key={movie.id} className="movie-item">
                             <h3 className="title">{movie.title}</h3>
-                            <p className="description">{movie.decription} </p>
+                            <p className="description">{movie.description} </p>
 
                             <button className="edit" onClick={() => setEditState(movie.id)}>Editar</button>
                             <button className="delete" onClick={() => deleteMovie(movie.id)}>Eliminar</button>
